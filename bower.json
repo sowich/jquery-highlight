@@ -1,6 +1,6 @@
 {
-  "name": "jquery-highlight",
-  "version": "3.2.2",
+  "name": "ith-jquery-highlight",
+  "version": "0.0.114.03.2016",
   "main": "./jquery.highlight.js",
   "dependencies": {
     "jquery": "*"
