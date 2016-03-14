@@ -138,7 +138,7 @@
         // only the matching word
         var pattern = '(' + words.join('|') + ')';
         if (settings.wordsOnly) {
-            pattern = settings.wordsBoundary + pattern + settings.wordsBoundary;
+            pattern = '(\\b' + words.join('|') + '\\w+|\\b' + words.join('|') + '\\b)';
         }
         var re = new RegExp(pattern, flag);
         
