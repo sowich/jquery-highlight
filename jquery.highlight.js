@@ -102,9 +102,7 @@
         jQuery.extend(settings, options);
 
         return this.find(settings.element + '.' + settings.className).each(function () {
-            var parent = this.parentNode;
-            parent.replaceChild(this.firstChild, this);
-            parent.normalize();
+            $(this).replaceWith($(this).text());
         }).end();
     };
 
